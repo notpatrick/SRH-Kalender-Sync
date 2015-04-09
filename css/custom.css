@@ -1,0 +1,17 @@
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  text-align: center;
+}
+
+.starter-width {
+  width: 50%;
+  margin: auto;
+  min-width: 250px;
+}
+
+.temp-alert {
+	padding-top: 40px;
+}
