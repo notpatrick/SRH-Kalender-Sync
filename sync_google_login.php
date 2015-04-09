@@ -7,7 +7,7 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
   $redirect_uri = 'https://' . $_SERVER['HTTP_HOST'] . '/calendar/';
   header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL));
 } else {
-  $redirect_uri = 'https://dnb4.me/calendar/oauth2callback.php';
+  $redirect_uri = 'https://' . $_SERVER['HTTP_HOST'] . '/calendar/oauth2callback.php';
   header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL));
 }
 

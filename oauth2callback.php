@@ -5,7 +5,7 @@ session_start();
 
 $client = new Google_Client();
 $client->setAuthConfigFile('../key.json');
-$client->setRedirectUri('https://dnb4.me/calendar/oauth2callback.php');
+$client->setRedirectUri('https://' . $_SERVER['HTTP_HOST'] . '/calendar/oauth2callback.php');
 $client->addScope('https://www.googleapis.com/auth/calendar');
 
 if (! isset($_GET['code'])) {
